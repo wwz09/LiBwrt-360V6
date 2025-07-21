@@ -1,4 +1,4 @@
-name: IPQ60XX-LibWrt
+name: LibWrt-Qihoo-360V6
 
 on:
   workflow_dispatch:
