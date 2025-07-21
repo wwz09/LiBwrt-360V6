@@ -13,8 +13,8 @@ jobs:
     rax3000m-ImmortalWrt-A:
       uses: ./.github/workflows/RAX3000M-Imm798x-nand-A.yml
 
-    #rax3000m-ImmortalWrt-B:
-      #uses: ./.github/workflows/RAX3000M-Imm798x-nand-B.yml
+    rax3000m-ImmortalWrt-B:
+      uses: ./.github/workflows/RAX3000M-Imm798x-nand-B.yml
 
     rax3000m-LEDE-A:
       uses: ./.github/workflows/RAX3000M-lede-nand-YM.yml
