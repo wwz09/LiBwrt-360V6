@@ -155,15 +155,15 @@ jobs:
         run: |
           cd ./wrt/package/
           
-          $GITHUB_WORKSPACE/Scripts/360V6/Packages.sh
-          $GITHUB_WORKSPACE/Scripts/360V6/Handles.sh
+          $GITHUB_WORKSPACE/scripts/360V6/Packages.sh
+          $GITHUB_WORKSPACE/scripts/360V6/Handles.sh
 
       - name: Custom Settings
         run: |
           cd ./wrt/
           
-          cat $GITHUB_WORKSPACE/Config/$WRT_CONFIG.txt $GITHUB_WORKSPACE/Config/GENERAL.txt >> .config
-          $GITHUB_WORKSPACE/Scripts/360V6/Settings.sh
+          cat $GITHUB_WORKSPACE/configs/$WRT_CONFIG.txt $GITHUB_WORKSPACE/configs/360V6.txt >> .config
+          $GITHUB_WORKSPACE/scripts/360V6/Settings.sh
 
           make defconfig -j$(nproc) && make clean -j$(nproc)
 
@@ -197,7 +197,7 @@ jobs:
         run: |
           cd ./wrt/ && mkdir ./upload/
 
-          cp -f ./.config ./upload/Config-"$WRT_CONFIG"-"$WRT_INFO"-"$WRT_DATE".txt
+          cp -f ./.config ./upload/configs-"$WRT_CONFIG"-"$WRT_INFO"-"$WRT_DATE".txt
 
           if [[ $WRT_TEST != 'true' ]]; then
             echo "WRT_KVER=$(find ./bin/targets/ -type f -name "*.manifest" -exec grep -oP '^kernel - \K[\d\.]+' {} \;)" >> $GITHUB_ENV
