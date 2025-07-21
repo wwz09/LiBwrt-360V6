@@ -10,8 +10,17 @@ jobs:
     IPQ60XX-LibWrt:
       uses: ./.github/workflows/IPQ60XX-LibWrt.yml
       
-    x86-64-ImmortalWrt:
-      uses: ./.github/workflows/x86-64-ImmortalWrt.yml
+    rax3000m-ImmortalWrt-A:
+      uses: ./.github/workflows/RAX3000M-Imm798x-nand-A.yml
+
+    rax3000m-ImmortalWrt-B:
+      uses: ./.github/workflows/RAX3000M-Imm798x-nand-B.yml
+
+    rax3000m-LEDE-A:
+      uses: ./.github/workflows/RAX3000M-lede-nand-YM.yml
+
+    rax3000m-LEDE-B:
+      uses: ./.github/workflows/RAX3000M-lede-nand-BM.yml
 
     All-Clean:
       uses: ./.github/workflows/All-Clean.yml
