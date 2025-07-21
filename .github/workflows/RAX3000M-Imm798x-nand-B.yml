@@ -1,8 +1,8 @@
 name: RAX3000M-Imm798x-nand-B
 
 on:
-  workflow_dispatch:
-  workflow_call:
+  workflow_dispatch:  # 保留原有触发器（如果需要手动触发）
+  workflow_call:      # 添加可复用工作流触发器
   # schedule:
   #   - cron: 0 20 * * *
 
