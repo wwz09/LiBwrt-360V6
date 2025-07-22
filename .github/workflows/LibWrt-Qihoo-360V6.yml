@@ -112,7 +112,7 @@ jobs:
     - name: Install Feeds(安装feeds)
       run: |
         cd $OPENWRT_PATH
-        echo "src-git custom_feed https://github.com/user/custom-feed.git" >> feeds.conf.default
+        echo "src-git routing https://git.openwrt.org/feed/routing.git" >> feeds.conf.default
         ./scripts/feeds update -a
         ./scripts/feeds install -a
   
