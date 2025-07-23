@@ -32,7 +32,7 @@ function git_sparse_clone() {
 
 # OpenList & AdGuardHome & WolPlus & Lucky & OpenAppFilter & 集客无线AC控制器 & 雅典娜LED控制
 
-git_sparse_clone IMM https://github.com/wwz09/IPQ_package luci-app-quickstart quickstart
+git_sparse_clone IMM https://github.com/wwz09/IPQ_package luci-app-quickstart quickstart luci-app-control-weburl luci-app-control-timewol luci-app-parentcontrol
 git clone --depth=1 https://github.com/sbwml/luci-app-openlist2 package/openlist
 git_sparse_clone master https://github.com/kenzok8/openwrt-packages adguardhome luci-app-adguardhome 
 git_sparse_clone main https://github.com/VIKINGYFY/packages luci-app-wolplus
