@@ -24,6 +24,9 @@ jobs:
 
     VIKINGYFY-Qihoo-360V6:
       uses: ./.github/workflows/VIKINGYFY-Qihoo-360V6.yml
+   
+    IMM-MT798X:
+      uses: ./.github/workflows/IMM-MT798X.yml
 
     All-Clean:
       uses: ./.github/workflows/All-Clean.yml
