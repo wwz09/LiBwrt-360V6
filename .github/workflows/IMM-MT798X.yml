@@ -12,6 +12,7 @@ env:
   CONFIG_FILE: configs/MT7981.config
   GENERAL_CONFIG_FILE: configs/IMM798X.config
   DIY_SCRIPT: ./scripts/RAX3000M/mwrt/SH2.sh
+  DIY2_SCRIPT: ./scripts/RAX3000M/mwrt/PU.sh
   CLASH_KERNEL: amd64
   MADS: false
   UPLOAD_BIN_DIR: false
@@ -121,6 +122,8 @@ jobs:
         chmod +x $DIY_SCRIPT
         cd $OPENWRT_PATH
         $GITHUB_WORKSPACE/$DIY_SCRIPT
+        $GITHUB_WORKSPACE/$DIY2_SCRIPT
+
 
     - name: Download DL Package(下载DL软件包)
       run: |
