@@ -8,7 +8,7 @@ on:
 
 env:
   REPO_URL: https://github.com/hanwckf/immortalwrt-mt798x
-  REPO_BRANCH: openwrt-21.02
+  REPO_BRANCH:  openwrt-21.02
   CONFIG_FILE: configs/MT7981.config
   GENERAL_CONFIG_FILE: configs/IMM798X.config
   DIY_SCRIPT: ./scripts/RAX3000M/mwrt/SH2.sh
