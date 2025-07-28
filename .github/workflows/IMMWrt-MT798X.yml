@@ -160,10 +160,10 @@ jobs:
         cd $OPENWRT_PATH/bin/targets/*/*
         cp $OPENWRT_PATH/.config ipq60xx.config
         mv config.buildinfo ipq60xx.config.buildinfo
-        for file in immortalwrt-mediatek-mt7981*; do
-          new_file="immwrt-${file#immortalwrt-mediatek-mt7981}"
-          mv "$file" "$new_file"
-        done
+        #for file in immortalwrt-mediatek-mt7981*; do
+          #new_file="immwrt-${file#immortalwrt-mediatek-mt7981}"
+          #mv "$file" "$new_file"
+        #done
         mv -f $OPENWRT_PATH/bin/packages/*/*/*.apk packages
         tar -zcf ipq60xx.Packages.tar.gz packages
         rm -rf packages feeds.buildinfo version.buildinfo sha256sums profiles.json
