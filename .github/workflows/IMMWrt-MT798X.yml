@@ -1,4 +1,4 @@
-name: IMM-MT798X
+name: IMMWrt-MT798X
 
 on:
   workflow_dispatch:
