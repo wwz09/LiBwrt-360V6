@@ -1,4 +1,4 @@
-name: VIKINGYFY-Qihoo-360V6
+name: LiBwrt-Qihoo-360V6
 
 on:
   workflow_dispatch:
