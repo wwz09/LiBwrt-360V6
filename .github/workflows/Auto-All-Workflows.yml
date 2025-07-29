@@ -25,8 +25,8 @@ jobs:
     VIKINGYFY-Qihoo-360V6:
       uses: ./.github/workflows/VIKINGYFY-Qihoo-360V6.yml
    
-    IMMWrt-MT798X:
-      uses: ./.github/workflows/IMMWrt-MT798X.yml
+    RAX3000M-ImmortalWrt:
+      uses: ./.github/workflows/RAX3000M-ImmortalWrt.yml
 
     All-Clean:
       uses: ./.github/workflows/All-Clean.yml
