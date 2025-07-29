@@ -1,4 +1,4 @@
-name: LibWrt-Qihoo-360V6
+name: Laipeng-Qihoo-360V6
 
 on:
   workflow_dispatch:
@@ -16,7 +16,7 @@ env:
   MADS: false
   UPLOAD_BIN_DIR: false
   FIRMWARE_RELEASE: true
-  FIRMWARE_TAG: IPQ60XX
+  FIRMWARE_TAG: Laipeng-IPQ60XX
   TZ: Asia/Shanghai
 
 jobs:
@@ -158,7 +158,7 @@ jobs:
         cp $OPENWRT_PATH/.config ipq60xx.config
         mv config.buildinfo ipq60xx.config.buildinfo
         for file in libwrt-qualcommax-ipq60xx-*; do
-          new_file="libwrt-${file#libwrt-qualcommax-ipq60xx-}"
+          new_file="Laipeng-${file#libwrt-qualcommax-ipq60xx-}"
           mv "$file" "$new_file"
         done
         mv -f $OPENWRT_PATH/bin/packages/*/*/*.apk packages
