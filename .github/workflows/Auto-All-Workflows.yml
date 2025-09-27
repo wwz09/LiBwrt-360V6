@@ -20,7 +20,7 @@ jobs:
       uses: ./.github/workflows/RAX3000M-lede-nand-BM.yml
 
     IPQ60XX-LibWrt: 
-      uses: ./.github/workflows/IPQ60XX-LibWrt.ym.yml
+      uses: ./.github/workflows/IPQ60XX-LibWrt.yml
 
     All-Clean:
       uses: ./.github/workflows/All-Clean.yml
