@@ -6,9 +6,6 @@ on:
     - cron: 0 20 * * 5  # 北京时间星期六凌晨4点，定时触发
 
 jobs:
-
-    LibWrt-Qihoo-360V6:
-      uses: ./.github/workflows/LiBwrt-Qihoo-360V6.yml
       
     rax3000m-ImmortalWrt-A:
       uses: ./.github/workflows/RAX3000M-Imm798x-nand-A.yml
@@ -22,11 +19,8 @@ jobs:
     rax3000m-LEDE-B:
       uses: ./.github/workflows/RAX3000M-lede-nand-BM.yml
 
-    Laipeng-Qihoo-360V6:
-      uses: ./.github/workflows/Laipeng-Qihoo-360V6.yml
-   
-    RAX3000M-ImmortalWrt:
-      uses: ./.github/workflows/RAX3000M-ImmortalWrt.yml
+    IPQ60XX-LibWrt: 
+      uses: ./.github/workflows/IPQ60XX-LibWrt.ym.yml
 
     All-Clean:
       uses: ./.github/workflows/All-Clean.yml
