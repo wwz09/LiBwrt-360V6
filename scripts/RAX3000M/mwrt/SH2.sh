@@ -60,11 +60,11 @@ function git_sparse_clone() {
 
 ## 添加额外插件
 
-git_sparse_clone IMM https://github.com/wwz09/IPQ_package  luci-app-ikoolproxy  luci-app-easymesh luci-app-ddnsto  luci-theme-argon luci-app-argon-config luci-app-lucky  luci-lib-xterm luci-lib-taskd luci-lib-iform
+git_sparse_clone main https://github.com/wwz09/small-kenzok8  luci-app-ikoolproxy  luci-app-easymesh luci-app-ddnsto  luci-theme-argon luci-app-argon-config luci-app-lucky  luci-lib-xterm luci-lib-taskd luci-lib-iform
 
-git_sparse_clone IMM https://github.com/wwz09/IPQ_package  ucl upx taskd ddnsto  lua-maxminddb  smartdns upx-static docker lucky vlmcsd sing-box 
+git_sparse_clone main https://github.com/wwz09/small-kenzok8  ucl upx taskd ddnsto  lua-maxminddb  smartdns upx-static docker lucky vlmcsd sing-box 
 
-git_sparse_clone IMM https://github.com/wwz09/LEDE-IMM-package luci-app-control-timewol luci-app-control-webrestriction luci-app-control-weburl luci-app-timecontrol luci-app-parentcontrol relevance
+git_sparse_clone main https://github.com/wwz09/small-kenzok8 luci-app-control-timewol luci-app-control-webrestriction luci-app-control-weburl luci-app-timecontrol luci-app-parentcontrol relevance
 
 
 #更换luci-app-vlmcsd
